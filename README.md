@@ -10,7 +10,7 @@ Currently there is only support for Engligh (really, North American English) add
 
 ## Examples
 
-    > create extension addressing_dictionary;
+    > CREATE EXTENSION addressing_dictionary;
 
     > SELECT to_tsvector('addressing_en', '1234 n main st');
 
