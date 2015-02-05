@@ -2,7 +2,9 @@
 
 ## Motivation
 
-Trying to use full-text indexing for address data with the default language configurations doesn't work well: you end up getting street names stemmed by the language dictionaries, you might get tokens dropped. Using very simple configurations is better but still not optimal: there is no handling of obvious abbreviations, so you might fail to match "12 N Oak st" to "12 North Oak Street", or vice versa.
+Trying to use full-text indexing for address data with the default language configurations doesn't work well: if you use an 'english' configuration, you end up getting street names stemmed by the english dictionary. Using the 'simple' configurations is better but still not optimal: there is no handling of obvious abbreviations, so you might fail to match "12 N Oak st" to "12 North Oak Street", or vice versa.  
+
+This extension provides an 'addressing_en' configuration that has common (Canada Post enumerated) street type abbreviations, direction tokens (n, s, e, w, etc) and numeric street variants (first/1st) handled. There's sure to be piles more, as well as many cases that cannot be handled with a simple full-text tokenizing strategy (st = street or saint?). However, using full-text features for basic geocoding is too convenient to ignore.
 
 Using full-text indexing for nationwide address data might still be a bad idea, since there are so many possible false or multiple matches to find, but for a single city, county or even state, this approach can general a quick'n'dirty address lookup routine perfect to tying to an autocomplete form field on a web page.
 
