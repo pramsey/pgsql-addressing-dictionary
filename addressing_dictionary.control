@@ -1,0 +1,4 @@
+default_version = '1.0'
+#module_pathname = '$libdir/addressing'
+relocatable = true
+comment = 'Address handling dictionaries for PostgreSQL, applies smarter handling to addresses in text search.'

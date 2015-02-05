@@ -1,0 +1,51 @@
+{
+   "name": "addressing_dictionary",
+   "abstract": "TSearch Dictionaries for handling address strings",
+   "description": "Allows the tsearch module to handle addresses including abbreviations and avoiding improperly stemming street names.",
+   "version": "1.0",
+   "maintainer": [
+      "Paul Ramsey <pramsey@cleverelephant.ca>"
+   ],
+   "license": {
+      "mit": "http://en.wikipedia.org/wiki/MIT_License"
+   },
+   "prereqs": {
+      "runtime": {
+         "requires": {
+            "PostgreSQL": "9.1.0"
+         },
+         "recommends": {
+            "PostgreSQL": "9.1.3"
+         }
+      }
+   },
+   "provides": {
+     "addressing_dictionary": {
+       "file": "addressing_dictionary--1.0.sql",
+       "docfile": "README.md",
+       "version": "1.0",
+       "abstract": "TSearch dictionaries for addresses"
+     },
+   },
+   "resources": {
+      "homepage": "https://github.com/pramsey/pgsql-addressing_dictionary/",
+      "bugtracker": {
+         "web": "https://github.com/pramsey/pgsql-addressing_dictionary/issues"
+      },
+      "repository": {
+        "url":  "https://github.com/pramsey/pgsql-addressing_dictionary.git",
+        "web":  "https://github.com/pramsey/pgsql-addressing_dictionary/",
+        "type": "git"
+      }
+   },
+   "generated_by": "Paul Ramsey",
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   },
+   "tags": [
+      "postgis",
+      "tsearch",
+      "geocoding"
+   ]
+}
