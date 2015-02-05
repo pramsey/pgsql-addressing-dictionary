@@ -8,6 +8,10 @@ Using full-text indexing for nationwide address data might still be a bad idea, 
 
 Currently there is only support for Engligh (really, North American English) addressing, pull requests gratefully received.
 
+## Installation
+
+Clone the repository, ensure that `pg_config` is on your path, and run `make install` to copy the dictionary files into place.
+
 ## Examples
 
     > CREATE EXTENSION addressing_dictionary;
