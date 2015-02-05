@@ -6,7 +6,7 @@ Trying to use full-text indexing for address data with the default language conf
 
 Using full-text indexing for nationwide address data might still be a bad idea, since there are so many possible false or multiple matches to find, but for a single city, county or even state, this approach can general a quick'n'dirty address lookup routine perfect to tying to an autocomplete form field on a web page.
 
-Currently there is only support for Engligh (really, North American English) addressing, pull requests gratefully received.
+Currently there is only support for English (really, North American English) addressing -- pull requests gratefully received.
 
 ## Installation
 
