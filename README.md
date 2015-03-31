@@ -20,10 +20,9 @@ Clone the repository, ensure that `pg_config` is on your path, and run `make ins
 
     > SELECT to_tsvector('addressing_en', '1234 n main st');
 
-                  to_tsvector               
-    ----------------------------------------
-     '1234':1 'main':3 'north':2 'street':4
-    (1 row)
+                     to_tsvector                  
+    ----------------------------------------------
+     '1234':1 'main':4 'n':2 'north':3 'street':5
 
-
-
+## Caveats
+If using v1.1, then cardinal directions are tokenized as both the single letter abbreviation, and the word. This is to avoid ambiguity. See example above.
