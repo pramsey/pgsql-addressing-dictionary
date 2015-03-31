@@ -2,7 +2,7 @@
    "name": "addressing_dictionary",
    "abstract": "TSearch Dictionaries for handling address strings",
    "description": "Allows the tsearch module to handle addresses including abbreviations and avoiding improperly stemming street names.",
-   "version": "1.0",
+   "version": "1.1",
    "maintainer": [
       "Paul Ramsey <pramsey@cleverelephant.ca>"
    ],
@@ -21,9 +21,9 @@
    },
    "provides": {
      "addressing_dictionary": {
-       "file": "addressing_dictionary--1.0.sql",
+       "file": "addressing_dictionary--1.1.sql",
        "docfile": "README.md",
-       "version": "1.0",
+       "version": "1.1",
        "abstract": "TSearch dictionaries for addresses"
      },
    },
