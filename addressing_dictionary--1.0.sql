@@ -11,10 +11,6 @@
 ------------------------------------------------------------
 -- English configuration
 --
-CREATE TEXT SEARCH CONFIGURATION addressing_en (
-	COPY = simple
-);
-
 CREATE TEXT SEARCH DICTIONARY public.addressing_stop_en (
 	TEMPLATE = pg_catalog.simple,
 	STOPWORDS = addressing_en
@@ -25,23 +21,18 @@ CREATE TEXT SEARCH DICTIONARY public.addressing_syn_en (
 	SYNONYMS = addressing_en
 );
 
-CREATE TEXT SEARCH DICTIONARY public.addresses_ths_en (
-	TEMPLATE = pg_catalog.thesaurus,
-	DictFile = addressing_en,
-	Dictionary = simple
+CREATE TEXT SEARCH CONFIGURATION addressing_en (
+	COPY = simple
 );
 
 ALTER TEXT SEARCH CONFIGURATION addressing_en
-	ALTER MAPPING FOR asciiword, word
-	WITH addresses_ths_en, addressing_syn_en, addressing_stop_en;
+    ALTER MAPPING FOR asciiword, word
+    WITH addressing_syn_en, addressing_stop_en;
+
 
 ------------------------------------------------------------
 -- French configuration
 --
-CREATE TEXT SEARCH CONFIGURATION addressing_fr (
-	COPY = simple
-);
-
 CREATE TEXT SEARCH DICTIONARY public.addressing_stop_fr (
 	TEMPLATE = pg_catalog.simple,
 	STOPWORDS = addressing_fr
@@ -52,15 +43,12 @@ CREATE TEXT SEARCH DICTIONARY public.addressing_syn_fr (
 	SYNONYMS = addressing_fr
 );
 
-
-CREATE TEXT SEARCH DICTIONARY public.addresses_ths_fr (
-        TEMPLATE = pg_catalog.thesaurus,
-        DictFile = addressing_fr,
-        Dictionary = simple
+CREATE TEXT SEARCH CONFIGURATION addressing_fr (
+	COPY = simple
 );
 
 ALTER TEXT SEARCH CONFIGURATION addressing_fr
     ALTER MAPPING FOR asciiword, word
-    WITH addresses_ths_fr, addressing_syn_fr, addressing_stop_fr;
+    WITH addressing_syn_fr, addressing_stop_fr;
 
 
