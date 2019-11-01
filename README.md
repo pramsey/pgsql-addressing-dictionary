@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Trying to use full-text indexing for address data with the default [language configurations](http://www.postgresql.org/docs/9.3/static/textsearch-dictionaries.html) doesn't work well: if you use an 'english' configuration, you end up getting street names stemmed by the english dictionary. Using the 'simple' configurations is better but still not optimal: there is no handling of obvious abbreviations, so you might fail to match "12 N Oak st" to "12 North Oak Street", or vice versa.  
+Trying to use full-text indexing for address data with the default [language configurations](http://www.postgresql.org/docs/9.3/static/textsearch-dictionaries.html) doesn't work well: if you use an 'english' configuration, you end up getting street names stemmed by the english dictionary. Using the 'simple' configurations is better but still not optimal: there is no handling of obvious abbreviations, so you might fail to match "12 N Oak st" to "12 North Oak Street", or vice versa.
 
 This extension provides an 'addressing_en' configuration that has common (Canada Post enumerated) street type abbreviations, direction tokens (n, s, e, w, etc) and numeric street variants (first/1st) handled. There's sure to be piles more, as well as many cases that cannot be handled with a simple full-text tokenizing strategy (st = street or saint?). However, using full-text features for basic geocoding is too convenient to ignore.
 

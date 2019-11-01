@@ -1,9 +1,12 @@
 ave avenue
+av avenue
 blvd boulevard
 bl boulevard
 circ circle
 cir circle
+cl circle
 crt court
+ct court
 cres crescent
 dr drive
 espl esplanade
@@ -12,8 +15,10 @@ fwy freeway
 gdns gardens
 hts heights
 hwy highway
+hy highway
 lkout lookout
 ln lane
+lp loop
 mtn mountain
 pk park
 pky parkway
@@ -24,6 +29,9 @@ st street
 sq square
 str street
 terr terrace
+tr terrace
+ww walkway
+wy way
 
 n north
 ne northeast
