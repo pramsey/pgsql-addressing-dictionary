@@ -15,17 +15,17 @@ CREATE TEXT SEARCH CONFIGURATION addressing_en (
 	COPY = simple
 );
 
-CREATE TEXT SEARCH DICTIONARY public.addressing_stop_en (
+CREATE TEXT SEARCH DICTIONARY addressing_stop_en (
 	TEMPLATE = pg_catalog.simple,
 	STOPWORDS = addressing_en
 );
 
-CREATE TEXT SEARCH DICTIONARY public.addressing_syn_en (
+CREATE TEXT SEARCH DICTIONARY addressing_syn_en (
 	TEMPLATE = pg_catalog.synonym, 
 	SYNONYMS = addressing_en
 );
 
-CREATE TEXT SEARCH DICTIONARY public.addresses_ths_en (
+CREATE TEXT SEARCH DICTIONARY addresses_ths_en (
 	TEMPLATE = pg_catalog.thesaurus,
 	DictFile = addressing_en,
 	Dictionary = simple
@@ -42,18 +42,18 @@ CREATE TEXT SEARCH CONFIGURATION addressing_fr (
 	COPY = simple
 );
 
-CREATE TEXT SEARCH DICTIONARY public.addressing_stop_fr (
+CREATE TEXT SEARCH DICTIONARY addressing_stop_fr (
 	TEMPLATE = pg_catalog.simple,
 	STOPWORDS = addressing_fr
 );
 
-CREATE TEXT SEARCH DICTIONARY public.addressing_syn_fr (
+CREATE TEXT SEARCH DICTIONARY addressing_syn_fr (
 	TEMPLATE = pg_catalog.synonym, 
 	SYNONYMS = addressing_fr
 );
 
 
-CREATE TEXT SEARCH DICTIONARY public.addresses_ths_fr (
+CREATE TEXT SEARCH DICTIONARY addresses_ths_fr (
         TEMPLATE = pg_catalog.thesaurus,
         DictFile = addressing_fr,
         Dictionary = simple

@@ -1,7 +1,7 @@
 ------------------------------------------------------------
 -- English configuration
 --
-CREATE TEXT SEARCH DICTIONARY public.addresses_ths_en (
+CREATE TEXT SEARCH DICTIONARY addresses_ths_en (
 	TEMPLATE = pg_catalog.thesaurus,
 	DictFile = addressing_en,
 	Dictionary = simple
@@ -14,7 +14,7 @@ ALTER TEXT SEARCH CONFIGURATION addressing_en
 ------------------------------------------------------------
 -- French configuration
 --
-CREATE TEXT SEARCH DICTIONARY public.addresses_ths_fr (
+CREATE TEXT SEARCH DICTIONARY addresses_ths_fr (
         TEMPLATE = pg_catalog.thesaurus,
         DictFile = addressing_fr,
         Dictionary = simple
