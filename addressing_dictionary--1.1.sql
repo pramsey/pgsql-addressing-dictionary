@@ -3,7 +3,7 @@
 
 ------------------------------------------------------------
 -- Read about how dictionaries should be ordered and what should go in
--- them http://www.postgresql.org/docs/9.3/static/textsearch-dictionaries.html
+-- them https://www.postgresql.org/docs/current/textsearch-dictionaries.html
 -- before mucking around with ordering or adding new languages.
 --
 
